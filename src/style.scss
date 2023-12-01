@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+.form_container{
+    background-color: #a7bcff;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .form_wrapper{
+        background-color: white;
+        padding: 20px 60px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        border-radius: 10px;
+        .logo{
+            color: #5d5b8d;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .title{
+            color: #5d5b8d;
+            font-size: 16px;
+        }
+        form{
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+
+            input{
+                padding: 15px;
+                border: none;
+                border-bottom: 1px solid #a7bcff;
+                width: 250px;
+                &::placeholder{
+                    color: rgb(175, 175, 175);
+                }
+            }
+            label{
+                display: flex;
+                align-items: center;
+                gap: 8px;
+                cursor: pointer;
+                color: #5d5b8d;
+                font-size: 14px;
+                img{
+                    width: 32px;
+                }
+            }
+            button{
+                background-color: #7b96ec;
+                color: white;
+                padding: 10px;
+                border: none;
+                cursor: pointer;
+                font-weight: bold;
+            }
+
+        }
+        p{
+         color: #5d5b8d;
+         font-size: 14px;
+         margin-top: 10px;   
+        }
+    }
+}
